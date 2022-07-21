@@ -1,0 +1,40 @@
+import pandas as pd
+df=pd.read_excel("C:\\Users\\nookaraju.c\\Downloads\\Task5.xlsx")
+df=df[["Date","Index Name","Price"]]
+
+final={}
+Year2021={}
+
+#df['Date'] = pd.to_datetime(df['Date'])
+
+
+
+df1=df.groupby([pd.Grouper(key='Date', freq='M'),"Index Name"])
+#s = df.groupby(df['Date'].dt.to_period('M'), as_index=False).max()
+#print(s.first)
+
+
+
+print(df1.max())
+
+#print(df1.first().loc["2020-12-31"])
+
+Y2021=df1.first().loc["2021-12-31"]
+Y2020=df1.first().loc["2020-12-31"]
+
+Year2021["Dow Jones 30"]=((Y2021.loc["Dow Jones 30"]["Price"]/Y2020.loc["Dow Jones 30"]["Price"])-1)*100
+Year2021["Russell 2000"]=(((Y2021.loc["Russell 2000"]["Price"])/(Y2020.loc["Russell 2000"]["Price"]))-1)*100
+Year2021["S&P 500"]=((Y2021.loc["S&P 500"]["Price"]/Y2020.loc["S&P 500"]["Price"])-1)*100
+
+#print(Y2020,Y2021)
+#print(type(float(Y2021.loc["Dow Jones 30"]["Price"])))
+
+df2=df.groupby([pd.Grouper(key='Date', freq='Y'),"Index Name"])
+
+#print(df2.first())
+#print(df1.first())
+
+
+
+
+

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<title> Cryptocurrency, Bitcoin</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<style>
+
+button{
+
+background-color:#49ad64;
+
+margin:10px 0px;
+border-color:green;
+
+}
+
+
+button:hover{
+
+background-color:#29d158;
+
+
+
+}
+.suggestion{
+  color: #28880d;
+}
+
+</style>
+
+<script>
+
+function formValidation(){
+
+
+
+let fname= document.forms["myForm"]["fname"].value;
+let lname= document.forms["myForm"]["lname"].value;
+let age= document.forms["myForm"]["age"].value;
+let phone= document.forms["myForm"]["phone"].value;
+
+
+
+if (age>18){
+window.alert(fname+" You are elegible");
+
+}
+
+else{
+
+window.alert("You aren't elegible");
+
+}
+}
+</script>
+
+
+
+</head>
+
+
+
+<body>
+<div class="container">
+<h4 style="margin :30px 0px;color:blue;"> Fill your details</h4>
+
+  <form name="myForm" onsubmit="return formValidation()" method="post">
+    <div class="form-group">
+
+    <label for="fname">First Name</label>
+
+    <input type="text" class="form-control" id="fname" name="firstname" placeholder="Your name.." autofocus=""  required >
+    <p id="fname1" class="suggestion">Name should be in alphabets only.</p>
+
+    <label for="lname">Last Name</label>
+    <input type="text" class="form-control" id="lname" name="lastname" placeholder="Your last name.." required >
+    <p id="lname1" class="suggestion">Name should be in alphabets only.</p>
+
+	<label for="age">Age</label>
+    <input type="number" class="form-control" id="age" name="age" placeholder="age" required>
+<label for="phone">Phone Number</label>
+    <input type="number" class="form-control" id="phone" name="phone" placeholder="Phone Number" required>
+
+    <div class="form-group">
+    <label for="state">State</label>
+    <select class="form-control" id="state" required>
+      <option>Andhra Pradesh</option>
+      <option>Telangana</option>
+      <option>Tamilnadu</option>
+      <option>Goa</option>
+      <option>Kerala</option>
+    </select>
+  </div>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" class="form-control" placeholder="Write something.." style="height:200px" required></textarea>
+
+    <button type="submit" value="submit" >Submit</button>
+</div>
+  </form>
+</div>
+</div>
+
+</br>
+</br>
+
+
+<div class="container">
+
+<h2 style="color:Blue;">Crypto Overview</h2>
+<p>Cryptocurrency is digital money designed to exchange over the internet to buy goods and services, held as part of investment strategy to trade without any intermediaries like banks, and allows to transact globally 24 X 7 with very low fee. Its main purpose is to eliminate problems caused by the transactions through financial institutions, including long processing time, fraud transactions, and high transaction fees.</p>
+
+</div>
+</br>
+</br>
+
+<div class="container">
+   <h4 style="color:Blue;" >Top Crypto Currencies</h4>
+  <div class="row">
+
+    <div class="col-sm-3" >
+
+
+      <div class="card" style="width: 100%;  box-shadow: 4px 4px 20px grey; margin:5px;">
+  		<div class="card-body">
+    		<h5 class="card-title" >Bitcoin</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  	</div>
+	</div>
+      
+    
+</div>
+   
+    <div class="col-sm-3">
+
+
+      <div class="card" style="width: 100%;box-shadow: 4px 4px 20px grey;margin:5px;">
+  		<div class="card-body">
+    		<h5 class="card-title">Ethereum</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  	</div>
+	</div>
+      
+
+
+</div>
+
+    <div class="col-sm-3">
+
+
+      <div class="card" style="width: 100%; box-shadow: 4px 4px 20px grey;margin:5px;">
+  		<div class="card-body">
+    		<h5 class="card-title">Tether</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  	</div>
+	</div>
+      
+    </div>
+	<div class="col-sm-3">
+
+
+      <div class="card" style="width: 100%; box-shadow: 4px 4px 20px grey;margin:5px;">
+  		<div class="card-body">
+    		<h5 class="card-title">USD Coin</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  	</div>
+	</div>
+      
+   
+</div>
+      
+    </div>	
+  </div>
+</div>
+</br>
+</br>
+
+
+<div class="container">
+  <h4 style="color:Blue;">Top 100 Cryptos based on Market Cap</h4>
+            
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th style="color:DodgerBlue;">Firstname</th>
+        <th style="color:DodgerBlue;">Lastname</th>
+        <th style="color:DodgerBlue;">Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr >
+        <td rowspan=4>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+	<tr>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+<tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+import pandas as pd
+df=pd.read_excel("C:\\Users\\nookaraju.c\\Downloads\\Task1.xlsx")
+df["Price_Prev"]=df.groupby('Ticker')['Price'].shift(1)
+df["Return"]=(df['Price'] /df["Price_Prev"] )-1
+df.to_excel("C://Users//nookaraju.c//Downloads//Task4.xlsx")
